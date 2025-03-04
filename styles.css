@@ -82,14 +82,6 @@ button:hover {
 }
 
 
-
-.error {
-    color: #d9534f;
-    font-size: 0.875rem;
-    margin-top: 0.3rem;
-}
-
-
 fieldset {
     border: 1px solid #ddd;
     padding: 1rem;
