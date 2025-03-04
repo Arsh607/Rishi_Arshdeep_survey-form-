@@ -43,7 +43,26 @@ function clearError(input) {
     input.classList.remove('error');
 }
 
+function validateForm(event) {
+    event.preventDefault();
+    let isValid = true;
 
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const genderRadios = document.getElementsByName('gender');
+    const country = document.getElementById('country');
+    const username = document.getElementById('username');
+    const date = document.getElementById('date');
+    const customId = document.getElementById('customId');
+    const comments = document.getElementById('comments');
+
+    clearError(name);
+    clearError(email);
+    clearError(country);
+    clearError(username);
+    clearError(date);
+    clearError(customId);
+    clearError(comments);
 
     if (!isNotEmpty(name)) {
         showError(name, 'Name is required.');
